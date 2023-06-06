@@ -1,5 +1,8 @@
 import { Button, Container, Flex, Input, Item, Spacer } from "./styles";
 import { useState, useEffect } from "react";
+import { getTasks, createTask, updateTask, deleteTask } from './api';
+
+
 
 function App() {
   const [task, setTask] = useState("");
